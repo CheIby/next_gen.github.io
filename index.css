@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+  .row h1{
+    text-align: center;
+    width: fit-content;
+    font-size: 50px;
+    color: whitesmoke;
+    animation:slidebg 5s linear infinite;
+  }
+  .row button{
+    width: auto;
+    height: auto;
+    font-size: larger;
+  }
+  .row button{
+    background-color: #343A40;
+    border-radius: 4px;  
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    
+  }
+  .row a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  .row button:hover{
+     animation:slidebg 5s linear infinite;
+  }
+  
+
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+  .head{
+    margin-top: 40px;
+  }
+  
+  .head{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }

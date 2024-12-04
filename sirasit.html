@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CheIby</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+        html {
+  scroll-behavior: smooth;
+}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .parallax {
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("https://cdn.discordapp.com/attachments/1112687715843047529/1121487391853641828/Barw-103.jpg");
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .home-title {
+            font-size: 3.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .home-title-color {
+            color: hsl(224, 89%, 60%);
+        }
+
+        .about {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .about-head {
+            margin-bottom: 2rem;
+        }
+
+        .about-head h1 {
+            font-weight: 900;
+            color: hsl(224, 56%, 12%);
+        }
+
+        .about-box {
+            max-width: 500px;
+            min-width: 200px;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-img {
+            justify-self: center;
+        }
+
+        .about-img {
+            width: 200px;
+            border-radius: .5rem;
+        }
+
+        .about-body {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .about-box h2 {
+            font-weight: 700;
+        }
+
+        .skill-img {
+            width: 200px;
+            height: 200px;
+            margin: 2rem;
+        }
+
+        .skill-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            background-color: hsl(224, 56%, 12%);
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            padding: 2rem 0;
+        }
+
+        .footer-title{
+            font-size: 2rem;
+        }
+
+        .footer-social{
+            margin: 2rem;
+        }
+
+        .footer-icon{
+            font-size: 3rem;
+            margin:1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+        </svg>
+    </button>
+
+    <aside id="default-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="#top"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span class="ml-3">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span class="flex-1 ml-3 whitespace-nowrap">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skill"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span class="flex-1 ml-3 whitespace-nowrap">Skill</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span class="flex-1 ml-3 whitespace-nowrap">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span class="flex-1 ml-3 whitespace-nowrap">Index</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="sm:ml-64">
+        <div class="parallax">
+            <div>
+                <h1 class="home-title">Hi,<br>I'am <span class="home-title-color">Sirasit</span><br> Web Designer</h1>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="about-head">
+                <h1>About</h1>
+            </div>
+            <div class="about-body">
+                <div class="about-box about-img">
+                    <img src="https://cdn.discordapp.com/attachments/1112687715843047529/1121488449866825775/64010845.JPG"
+                        alt="">
+                </div>
+                <div class="about-box">
+                    <h2>I'am Sirasit Thiancharoenchai</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo
+                        culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque
+                        perferendis! Recusandae alias accusamus atque.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="skill">
+            <div class="about-head">
+                <h1>Skill</h1>
+            </div>
+            <div class="about-body">
+                <div class="skill-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png"
+                        alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                        alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="contact">
+            <p class="footer-title">Contact</p>
+            <div class="footer-social">
+                <a href="#" class="footer-icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer-icon"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
